@@ -17,20 +17,24 @@ func initialize(game: Node) -> void:
 	data = JSON.parse_string(FileAccess.get_file_as_string("res://data/tree-kit.json"))
 	host.streaming.register_provider(self)
 	levels.resize(data.type.size())
-	for id in data.ids:
-		var root: Node3D = load("res://assets/tree-kit/models/" + id + ".glb").instantiate()
-		var variants: Dictionary = {}
-		for mesh in host.models.meshes(root):
-			var suffix: PackedStringArray = str(mesh.name).split("_LOD")
-			if suffix.size() < 2:
-				continue
-			var level := int(suffix[1].left(1))
-			if not variants.has(level):
-				variants[level] = []
-			variants[level].append({"mesh":mesh.mesh,"leaf":str(mesh.name).ends_with("_Leaf")})
-		templates[id] = variants
-		root.free()
 	update_forest(true)
+
+func ensure_template(id: String) -> void:
+	if templates.has(id):
+		return
+	var packed: PackedScene = load("res://assets/tree-kit/models/" + id + ".glb")
+	var root: Node3D = packed.instantiate()
+	var variants: Dictionary = {}
+	for mesh: MeshInstance3D in host.models.meshes(root):
+		var suffix: PackedStringArray = str(mesh.name).split("_LOD")
+		if suffix.size() < 2:
+			continue
+		var level: int = int(suffix[1].left(1))
+		if not variants.has(level):
+			variants[level] = []
+		variants[level].append({"mesh":mesh.mesh,"leaf":str(mesh.name).ends_with("_Leaf")})
+	templates[id] = variants
+	root.free()
 
 func material(id: String, is_leaf: bool, origin_texture: ImageTexture) -> ShaderMaterial:
 	var result := ShaderMaterial.new()
@@ -94,6 +98,7 @@ func update_forest(force: bool = false) -> void:
 		var members: Array = selected[key]
 		var fields: PackedStringArray = key.split("|")
 		var id: String = data.ids[int(fields[0])]
+		ensure_template(id)
 		var level := int(fields[1])
 		if batches.has(key) and batches[key].members == members:
 			update_shadows(batches[key],position,preset,level)
@@ -155,6 +160,12 @@ func update_forest(force: bool = false) -> void:
 			for node in batches[key].nodes:
 				node.queue_free()
 			batches.erase(key)
+	var retained_types: Dictionary = {}
+	for key: String in batches:
+		retained_types[data.ids[int(key.split("|")[0])]] = true
+	for id: String in templates.keys():
+		if not retained_types.has(id):
+			templates.erase(id)
 
 func update_shadows(batch: Dictionary, position: Vector3, preset: Dictionary, level: int) -> void:
 	var mode := GeometryInstance3D.SHADOW_CASTING_SETTING_ON if preset.shadow.enabled and level == 0 else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF

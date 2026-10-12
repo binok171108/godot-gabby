@@ -20,17 +20,53 @@ var preparing: Dictionary = {}
 var prefetch_busy := false
 var standby_hits := 0
 var base_loaded: Dictionary = {}
+var part_bounds: Dictionary = {}
+const MAX_STANDBY_CELLS: int = 1
 signal standby_ready
 
 func initialize(owner_game: Node, parent: Node3D, focus: Vector2) -> bool:
 	host = owner_game
 	scenery = parent
 	manifest = JSON.parse_string(FileAccess.get_file_as_string("res://data/world-cells.json"))
+	part_bounds = JSON.parse_string(FileAccess.get_file_as_string("res://data/world-part-bounds.json"))
 	host.streaming.register_provider(self)
 	if not await AssetPacks.ensure_pack("world_base"):
 		return false
 	await refresh(focus, true)
 	return true
+
+func region_recipe(recipe: Dictionary, focus: Vector2) -> Dictionary:
+	var selected: Dictionary = recipe.duplicate()
+	var parts: Array[String] = []
+	for path: String in recipe.get("parts", []):
+		var values: Array = part_bounds[path]
+		var bounds: Rect2 = Rect2(values[0], values[1], values[2], values[3])
+		if Policy.should_load(bounds, focus, host.streaming.predicted):
+			parts.append(path)
+	selected["parts"] = parts
+	return selected
+
+func release_region(root: Node3D) -> void:
+	host.streaming.unregister_visuals(root)
+	for mesh in host.models.meshes(root):
+		host.world_lod.unregister(mesh)
+	host.stream_colliders = host.stream_colliders.filter(func(entry): return is_instance_valid(entry.shape) and not root.is_ancestor_of(entry.shape))
+	root.get_parent().remove_child(root)
+	root.queue_free()
+
+func prune_parts(entry: Dictionary, focus: Vector2) -> void:
+	var retained: Array[String] = []
+	for child: Node in entry.node.get_children():
+		var path: String = child.get_meta("chunk_part_path", "")
+		if path.is_empty():
+			continue
+		var values: Array = part_bounds[path]
+		var bounds: Rect2 = Rect2(values[0], values[1], values[2], values[3])
+		if Policy.should_retain(bounds, focus, host.streaming.predicted):
+			retained.append(path)
+		else:
+			release_region(child)
+	entry["parts"] = retained
 
 func refresh_base(focus: Vector2) -> void:
 	for path in base_loaded.keys():
@@ -39,11 +75,9 @@ func refresh_base(focus: Vector2) -> void:
 		if Policy.should_retain(bounds,focus,host.streaming.predicted):
 			continue
 		var root: Node3D = base_loaded[path]
-		for mesh in host.models.meshes(root):
-			host.world_lod.unregister(mesh)
-		root.get_parent().remove_child(root)
-		root.queue_free()
+		release_region(root)
 		base_loaded.erase(path)
+		await get_tree().process_frame
 	for path in manifest.base.parts:
 		var values: Array = manifest.base.regions[path]
 		var bounds := Rect2(values[0],values[1],values[2],values[3])
@@ -89,6 +123,7 @@ func instantiate_recipe(recipe: Dictionary, foreground: bool, activate: bool = t
 		for shape in part.find_children("*","CollisionShape3D",true,false):
 			shape.disabled = true
 		root.add_child(part)
+		part.set_meta("chunk_part_path", path)
 		await host.prepare_stream_scene(part,[],false)
 		for node in part.find_children("*","MultiMeshInstance3D",true,false):
 			RenderingServer.multimesh_set_physics_interpolated(node.multimesh.get_rid(),false)
@@ -135,11 +170,17 @@ func refresh(focus: Vector2, initial: bool = false) -> void:
 		var fields: PackedStringArray = key.split(",")
 		if not Policy.should_retain(Policy.cell_bounds(Vector2i(int(fields[0]),int(fields[1]))),focus,host.streaming.predicted):
 			unload_cell(key)
+		else:
+			prune_parts(loaded[key], focus)
 	order.sort_custom(func(first, second): return first.distance < second.distance)
 	for item in order:
-		if loaded.has(item.key) and loaded[item.key].state == item.state:
+		if focus.distance_to(host.streaming.focus) > Policy.LOAD_RADIUS:
+			busy = false
+			last_focus = Vector2(INF, INF)
+			return
+		var recipe: Dictionary = region_recipe(manifest.cells[item.key][item.state], focus)
+		if loaded.has(item.key) and loaded[item.key].state == item.state and loaded[item.key].parts == recipe.parts:
 			continue
-		var recipe: Dictionary = manifest.cells[item.key][item.state]
 		var id: String = "cell_" + item.key.replace(",", "_") + "_" + item.state
 		if initial:
 			host.web_loading("Đang tải vùng %s (%s)…" % [item.key, item.state])
@@ -155,11 +196,14 @@ func refresh(focus: Vector2, initial: bool = false) -> void:
 		while preparing.has(item.key) and item.state=="near":
 			await standby_ready
 		var root: Node3D
-		if item.state=="near" and standby.has(item.key):
+		if item.state=="near" and standby.has(item.key) and standby[item.key].get_meta("parts") == recipe.parts:
 			root = standby[item.key]
 			standby.erase(item.key)
 			standby_hits += 1
 		else:
+			if standby.has(item.key):
+				release_region(standby[item.key])
+				standby.erase(item.key)
 			root = await instantiate_recipe(recipe,initial)
 		if not root:
 			busy = false
@@ -167,16 +211,20 @@ func refresh(focus: Vector2, initial: bool = false) -> void:
 			last_focus = Vector2(INF,INF)
 			retry_at = Time.get_ticks_msec() + 1000
 			return
+		if focus.distance_to(host.streaming.focus) > Policy.LOAD_RADIUS:
+			release_region(root)
+			busy = false
+			last_focus = Vector2(INF, INF)
+			return
 		if root.get_parent()==null:
 			root.hide()
 			scenery.add_child(root)
 			await host.prepare_stream_scene(root, recipe.nodes,false)
 		if loaded.has(item.key):
 			unload_cell(item.key)
-		loaded[item.key] = {"state":item.state,"node":root}
+		loaded[item.key] = {"state":item.state,"node":root,"parts":recipe.parts}
 		activate_scene(root)
-		if OS.has_feature("web"):
-			await get_tree().process_frame
+		await get_tree().process_frame
 	busy = false
 
 func prefetch(target: Vector2) -> void:
@@ -195,6 +243,8 @@ func prefetch(target: Vector2) -> void:
 		order.append({"key":key,"point":point,"distance":point.distance_to(target)})
 	order.sort_custom(func(first,second): return first.distance<second.distance)
 	for item in order:
+		if standby.size() >= MAX_STANDBY_CELLS:
+			break
 		if standby.has(item.key) or (loaded.has(item.key) and loaded[item.key].state=="near"):
 			continue
 		if not host.streaming.in_cell_interest(item.point):
@@ -202,9 +252,14 @@ func prefetch(target: Vector2) -> void:
 		preparing[item.key] = true
 		var id: String = "cell_"+item.key.replace(",","_")+"_near"
 		if await host.streaming.request_pack(id,item.point,false):
-			var root: Node3D = await instantiate_recipe(manifest.cells[item.key].near,false,false)
+			var recipe: Dictionary = region_recipe(manifest.cells[item.key].near, host.streaming.focus)
+			var root: Node3D = await instantiate_recipe(recipe,false,false)
 			if root:
-				standby[item.key] = root
+				if not host.streaming.in_near_interest(item.point):
+					release_region(root)
+				else:
+					root.set_meta("parts", recipe.parts)
+					standby[item.key] = root
 		preparing.erase(item.key)
 		standby_ready.emit()
 	prefetch_busy = false
@@ -217,21 +272,20 @@ func stream_update() -> void:
 		var fields: PackedStringArray = key.split(",")
 		var point := Vector2((float(fields[0])+0.5)*Lod.CELL_SIZE,(float(fields[1])+0.5)*Lod.CELL_SIZE)
 		if not host.streaming.in_near_interest(point):
-			standby[key].get_parent().remove_child(standby[key])
-			standby[key].queue_free()
+			release_region(standby[key])
 			standby.erase(key)
 
 func unload_cell(key: String) -> void:
 	var root: Node3D = loaded[key].node
-	for mesh in host.models.meshes(root):
-		host.world_lod.unregister(mesh)
-	root.get_parent().remove_child(root)
-	root.queue_free()
+	release_region(root)
 	loaded.erase(key)
 	unloads += 1
 
 func info() -> Dictionary:
-	return {"cell":[last_cell.x,last_cell.y],"loaded":loaded.size(),"baseRegions":base_loaded.size(),"requests":requests,"unloads":unloads,"busy":busy,"standbyHits":standby_hits,"maxSceneLoadUsec":max_scene_load_usec,"maxSceneInstantiateUsec":max_scene_instantiate_usec}
+	var parts: int = 0
+	for entry: Dictionary in loaded.values():
+		parts += entry.parts.size()
+	return {"cell":[last_cell.x,last_cell.y],"loaded":loaded.size(),"parts":parts,"baseRegions":base_loaded.size(),"requests":requests,"unloads":unloads,"busy":busy,"standbyHits":standby_hits,"maxSceneLoadUsec":max_scene_load_usec,"maxSceneInstantiateUsec":max_scene_instantiate_usec}
 
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(host) or host.loading_room or host.picking_profile:

@@ -13,6 +13,11 @@ Nếu dùng Download ZIP trên GitHub, giải nén trong Files rồi import thư
 
 ## Trạng thái kiểm thử
 
+- Chunking mới: chỉ nạp phần cảnh có bounds nằm trong vùng quan tâm, không nạp trọn tất cả phần của cell 60 m. Index 1.194 phần cảnh giữ nguyên model/mesh; không cắt bỏ nội dung nguồn.
+- Một policy chung cho static scene, nền, NPC, cây/cỏ và phương tiện: chi tiết 24 m, hoạt động 48 m, nạp trước 64 m, giữ tối đa 80 m; dự đoán hướng đi 2 giây. Đây là khoảng cách tới bounds, không phải khoảng cách tới tâm mesh.
+- Khi đi xa gỡ node/collider/registry thật; cây tải template theo loại cần dùng rồi giải phóng loại hết vùng. Prefetch standby tối đa một cell; instantiate cảnh chia frame trên native nữa, không chỉ Web.
+- QA Windows đi qua nhiều vùng → ra ngoài world → quay lại: allocator ~224.2 → ~224.9 MiB, vùng trống ~117.4 MiB; không phải tổng RAM/GPU iPhone. Import thật trên iOS vẫn cần kiểm. Asset thư viện mô phỏng xe/tàu và model người chơi còn dùng chung; không tuyên bố mọi byte RAM được giải phóng khi unload.
+
 - Bản sửa bộ nhớ: không dựng world trước chọn profile; chỉ dựng khi chọn người chơi. Đo allocator Godot headless Windows: màn profile ~390 → ~76.3 MiB sau sửa khởi động/nén texture. QA chủ động vào world đo ~248.9 MiB, sáu hệ thống world vẫn hoạt động. Đây không phải tổng RAM/GPU trên iPhone và chưa chứng minh cảnh báo low memory đã hết.
 - 217 texture 3D chuyển từ Lossless sang VRAM Compressed, High Quality; giữ nguyên kích thước ảnh/mipmap, 2 mask giữ lossless để bảo toàn dữ liệu. Mobile renderer có thể import ASTC; desktop có cấu hình S3TC/BPTC để kiểm thử. Pull lần này phải chờ reimport texture hoàn tất.
 
