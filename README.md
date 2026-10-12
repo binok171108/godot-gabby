@@ -30,6 +30,11 @@ Nếu dùng Download ZIP trên GitHub, giải nén trong Files rồi import thư
 
 ## Tài nguyên và Git
 
+- Gói runtime gọn: loại GLB nguồn đầy đủ/legacy Babylon và GLB cell dùng để bake; game dùng scene chunk đã chuẩn bị, giữ nguyên toàn bộ geometry/collider/nội dung. Không dùng project này để chạy lại `bake_cells.gd`; nguồn authoring được giữ riêng trên máy phát triển.
+- Scene `.scn` nén lossless bằng ResourceSaver chuẩn Godot: tổng 1.897 file ~258.7 → ~113.8 MiB, kiểm hash geometry/collider trước và sau giống hệt. Không giảm tam giác/độ phân giải.
+- Dung lượng ổ đĩa trước đây ~641 MiB asset + ~548 MiB cache import = gần 1.2 GiB, không phải RAM. Sau loại source dư và nén scene, asset ~260 MiB; cache trống import Windows đo ~309 MiB (iOS có thể khác). `.godot` không nằm trong repo/ZIP và do editor tạo lại.
+- Git giữ lịch sử blob cũ: Pull không làm nhỏ ngay history `.git` hoặc cache import cũ. Để thử gói gọn từ đầu, tải **Code → Download ZIP**, giải nén vào thư mục mới rồi import. Giữ bản cũ/save đến khi xác nhận bản mới chạy.
+
 - Asset được lưu trực tiếp trong Git, **không dùng Git LFS pointer**, để clone/import không cần công cụ LFS riêng trên iOS. Clone đầu tiên có thể nặng và import lần đầu có thể lâu.
 - `snapshot-manifest.json` ghi SHA256 của snapshot gốc. README của repo khác README snapshot; file manifest không phải chứng nhận tương thích iOS.
 - Chủ project đã cho phép đưa asset của snapshot này lên repo công khai. Việc công khai không tự cấp quyền phân phối lại cho bên thứ ba.
