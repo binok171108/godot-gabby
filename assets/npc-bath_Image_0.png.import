@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cls6camota3wy"
-path="res://.godot/imported/npc-bath_Image_0.png-9e8cf4be281a4c30000fe523be0ff293.ctex"
+path.bptc="res://.godot/imported/npc-bath_Image_0.png-9e8cf4be281a4c30000fe523be0ff293.bptc.ctex"
+path.astc="res://.godot/imported/npc-bath_Image_0.png-9e8cf4be281a4c30000fe523be0ff293.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "cc6aa5bdf5fb9a61e5e3855a8fec010c"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/npc-bath_Image_0.png"
-dest_files=["res://.godot/imported/npc-bath_Image_0.png-9e8cf4be281a4c30000fe523be0ff293.ctex"]
+dest_files=["res://.godot/imported/npc-bath_Image_0.png-9e8cf4be281a4c30000fe523be0ff293.bptc.ctex", "res://.godot/imported/npc-bath_Image_0.png-9e8cf4be281a4c30000fe523be0ff293.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

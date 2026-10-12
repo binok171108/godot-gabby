@@ -13,6 +13,9 @@ Nếu dùng Download ZIP trên GitHub, giải nén trong Files rồi import thư
 
 ## Trạng thái kiểm thử
 
+- Bản sửa bộ nhớ: không dựng world trước chọn profile; chỉ dựng khi chọn người chơi. Đo allocator Godot headless Windows: màn profile ~390 → ~76.3 MiB sau sửa khởi động/nén texture. QA chủ động vào world đo ~248.9 MiB, sáu hệ thống world vẫn hoạt động. Đây không phải tổng RAM/GPU trên iPhone và chưa chứng minh cảnh báo low memory đã hết.
+- 217 texture 3D chuyển từ Lossless sang VRAM Compressed, High Quality; giữ nguyên kích thước ảnh/mipmap, 2 mask giữ lossless để bảo toàn dữ liệu. Mobile renderer có thể import ASTC; desktop có cấu hình S3TC/BPTC để kiểm thử. Pull lần này phải chờ reimport texture hoàn tất.
+
 - Snapshot được kiểm Godot 4.7.2 Windows: cold import không ERROR/SCRIPT ERROR; runtime regression đạt entity load/unload, camera, map/manual cancellation và train.
 - **Sửa lỗi parse từ ảnh Xogot:** `background_runner.gd` vẫn gọi `StreamInput` sau khi bỏ Autoload cầu nối stream. Đã tái hiện lỗi `gdscript_resource_format.cpp:46` trên Windows rồi loại toàn bộ script/scene cầu nối stream không dùng khỏi repo này. Chưa kiểm lại trên iPhone/iPad thật.
 - Sau khi Pull bản sửa, dừng game và đóng/mở lại project, chờ import tài nguyên hoàn tất. Nếu model Cốm vẫn trả về null, chọn `assets/ai/com-kit.glb` trong FileSystem và Reimport; gửi thêm log import đầu tiên nếu thất bại. Chưa chứng minh model null trên iOS cùng nguyên nhân với lỗi parse; không dùng model thay thế.

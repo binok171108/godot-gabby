@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfxmi6vs1w75w"
-path="res://.godot/imported/lawn-kit_1.png-a46527b1f40a4e820f6a8463c162a082.ctex"
+path.bptc="res://.godot/imported/lawn-kit_1.png-a46527b1f40a4e820f6a8463c162a082.bptc.ctex"
+path.astc="res://.godot/imported/lawn-kit_1.png-a46527b1f40a4e820f6a8463c162a082.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "c0bb30887a907a0bde17b978e1c6b359"
@@ -14,12 +16,12 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/lawn-stream/lawn-kit_1.png"
-dest_files=["res://.godot/imported/lawn-kit_1.png-a46527b1f40a4e820f6a8463c162a082.ctex"]
+dest_files=["res://.godot/imported/lawn-kit_1.png-a46527b1f40a4e820f6a8463c162a082.bptc.ctex", "res://.godot/imported/lawn-kit_1.png-a46527b1f40a4e820f6a8463c162a082.astc.ctex"]
 
 [params]
 
-compress/mode=0
-compress/high_quality=false
+compress/mode=2
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0

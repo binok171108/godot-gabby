@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ci416mefksd1v"
-path="res://.godot/imported/GrassFlowerKit_All_GrassFlower_Atlas.png-9f22c03de7153196678fefc1d851f5b7.ctex"
+path.bptc="res://.godot/imported/GrassFlowerKit_All_GrassFlower_Atlas.png-9f22c03de7153196678fefc1d851f5b7.bptc.ctex"
+path.astc="res://.godot/imported/GrassFlowerKit_All_GrassFlower_Atlas.png-9f22c03de7153196678fefc1d851f5b7.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "5197bdd7ae69fc679c0fcd4b3507c86d"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/grass-kit/GrassFlowerKit_All_GrassFlower_Atlas.png"
-dest_files=["res://.godot/imported/GrassFlowerKit_All_GrassFlower_Atlas.png-9f22c03de7153196678fefc1d851f5b7.ctex"]
+dest_files=["res://.godot/imported/GrassFlowerKit_All_GrassFlower_Atlas.png-9f22c03de7153196678fefc1d851f5b7.bptc.ctex", "res://.godot/imported/GrassFlowerKit_All_GrassFlower_Atlas.png-9f22c03de7153196678fefc1d851f5b7.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

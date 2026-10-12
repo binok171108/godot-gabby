@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dljongv0c3xsm"
-path="res://.godot/imported/dream-nobita_tripo_image_589dc173-6fb6-4b5e-a4d4-ef2790efefe6_0_0.jpg-ffce1db8fc016f6035b127daa6d29d79.ctex"
+path.bptc="res://.godot/imported/dream-nobita_tripo_image_589dc173-6fb6-4b5e-a4d4-ef2790efefe6_0_0.jpg-ffce1db8fc016f6035b127daa6d29d79.bptc.ctex"
+path.astc="res://.godot/imported/dream-nobita_tripo_image_589dc173-6fb6-4b5e-a4d4-ef2790efefe6_0_0.jpg-ffce1db8fc016f6035b127daa6d29d79.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "509f49753622f3aaafd9e8ef40ef1ade"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/dream-nobita_tripo_image_589dc173-6fb6-4b5e-a4d4-ef2790efefe6_0_0.jpg"
-dest_files=["res://.godot/imported/dream-nobita_tripo_image_589dc173-6fb6-4b5e-a4d4-ef2790efefe6_0_0.jpg-ffce1db8fc016f6035b127daa6d29d79.ctex"]
+dest_files=["res://.godot/imported/dream-nobita_tripo_image_589dc173-6fb6-4b5e-a4d4-ef2790efefe6_0_0.jpg-ffce1db8fc016f6035b127daa6d29d79.bptc.ctex", "res://.godot/imported/dream-nobita_tripo_image_589dc173-6fb6-4b5e-a4d4-ef2790efefe6_0_0.jpg-ffce1db8fc016f6035b127daa6d29d79.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

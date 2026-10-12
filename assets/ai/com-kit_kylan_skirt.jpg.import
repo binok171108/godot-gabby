@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dseroqoy02rsv"
-path="res://.godot/imported/com-kit_kylan_skirt.jpg-29ca5cc597ac2c82608a3086d2bf96fa.ctex"
+path.bptc="res://.godot/imported/com-kit_kylan_skirt.jpg-29ca5cc597ac2c82608a3086d2bf96fa.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_kylan_skirt.jpg-29ca5cc597ac2c82608a3086d2bf96fa.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "2f214448831a4c6157373f66619487c7"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_kylan_skirt.jpg"
-dest_files=["res://.godot/imported/com-kit_kylan_skirt.jpg-29ca5cc597ac2c82608a3086d2bf96fa.ctex"]
+dest_files=["res://.godot/imported/com-kit_kylan_skirt.jpg-29ca5cc597ac2c82608a3086d2bf96fa.bptc.ctex", "res://.godot/imported/com-kit_kylan_skirt.jpg-29ca5cc597ac2c82608a3086d2bf96fa.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

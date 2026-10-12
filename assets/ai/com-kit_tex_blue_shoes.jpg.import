@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbgw8cherlq3h"
-path="res://.godot/imported/com-kit_tex_blue_shoes.jpg-e8ae11f6e88221ab4de2649beadf40bf.ctex"
+path.bptc="res://.godot/imported/com-kit_tex_blue_shoes.jpg-e8ae11f6e88221ab4de2649beadf40bf.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_tex_blue_shoes.jpg-e8ae11f6e88221ab4de2649beadf40bf.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "a0b8fa5249ca80d56597faab090c6035"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_blue_shoes.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_blue_shoes.jpg-e8ae11f6e88221ab4de2649beadf40bf.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_blue_shoes.jpg-e8ae11f6e88221ab4de2649beadf40bf.bptc.ctex", "res://.godot/imported/com-kit_tex_blue_shoes.jpg-e8ae11f6e88221ab4de2649beadf40bf.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

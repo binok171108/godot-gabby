@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8o13w3jx6hej"
-path="res://.godot/imported/dream-jaian_tripo_image_c1d7fc1e_3-tripo_image_c1d7fc1e_4.png-e0b9b46647158bdb54a297a1351c5a33.ctex"
+path.bptc="res://.godot/imported/dream-jaian_tripo_image_c1d7fc1e_3-tripo_image_c1d7fc1e_4.png-e0b9b46647158bdb54a297a1351c5a33.bptc.ctex"
+path.astc="res://.godot/imported/dream-jaian_tripo_image_c1d7fc1e_3-tripo_image_c1d7fc1e_4.png-e0b9b46647158bdb54a297a1351c5a33.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "58307e7ae6c7d9066325228d31975c6b"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/dream-jaian_tripo_image_c1d7fc1e_3-tripo_image_c1d7fc1e_4.png"
-dest_files=["res://.godot/imported/dream-jaian_tripo_image_c1d7fc1e_3-tripo_image_c1d7fc1e_4.png-e0b9b46647158bdb54a297a1351c5a33.ctex"]
+dest_files=["res://.godot/imported/dream-jaian_tripo_image_c1d7fc1e_3-tripo_image_c1d7fc1e_4.png-e0b9b46647158bdb54a297a1351c5a33.bptc.ctex", "res://.godot/imported/dream-jaian_tripo_image_c1d7fc1e_3-tripo_image_c1d7fc1e_4.png-e0b9b46647158bdb54a297a1351c5a33.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

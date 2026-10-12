@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7o5nf34qn6b8"
-path="res://.godot/imported/dream-shizuka_tripo_image_77479885-695c-4edb-b7f0-cbc1f6c5f674_0_1.jpg-08d795f5c1ce8600817232ca9e8e74bf.ctex"
+path.bptc="res://.godot/imported/dream-shizuka_tripo_image_77479885-695c-4edb-b7f0-cbc1f6c5f674_0_1.jpg-08d795f5c1ce8600817232ca9e8e74bf.bptc.ctex"
+path.astc="res://.godot/imported/dream-shizuka_tripo_image_77479885-695c-4edb-b7f0-cbc1f6c5f674_0_1.jpg-08d795f5c1ce8600817232ca9e8e74bf.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "a46d48c5d7e4b34c556cff3d9d18d13e"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/dream-shizuka_tripo_image_77479885-695c-4edb-b7f0-cbc1f6c5f674_0_1.jpg"
-dest_files=["res://.godot/imported/dream-shizuka_tripo_image_77479885-695c-4edb-b7f0-cbc1f6c5f674_0_1.jpg-08d795f5c1ce8600817232ca9e8e74bf.ctex"]
+dest_files=["res://.godot/imported/dream-shizuka_tripo_image_77479885-695c-4edb-b7f0-cbc1f6c5f674_0_1.jpg-08d795f5c1ce8600817232ca9e8e74bf.bptc.ctex", "res://.godot/imported/dream-shizuka_tripo_image_77479885-695c-4edb-b7f0-cbc1f6c5f674_0_1.jpg-08d795f5c1ce8600817232ca9e8e74bf.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

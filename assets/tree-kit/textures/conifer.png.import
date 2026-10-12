@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dta7brrsaqn0x"
-path="res://.godot/imported/conifer.png-65d99d85a12dae0cf31de3be546b056e.ctex"
+path.bptc="res://.godot/imported/conifer.png-65d99d85a12dae0cf31de3be546b056e.bptc.ctex"
+path.astc="res://.godot/imported/conifer.png-65d99d85a12dae0cf31de3be546b056e.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tree-kit/textures/conifer.png"
-dest_files=["res://.godot/imported/conifer.png-65d99d85a12dae0cf31de3be546b056e.ctex"]
+dest_files=["res://.godot/imported/conifer.png-65d99d85a12dae0cf31de3be546b056e.bptc.ctex", "res://.godot/imported/conifer.png-65d99d85a12dae0cf31de3be546b056e.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

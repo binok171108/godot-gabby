@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://claeap6nd4o30"
-path="res://.godot/imported/asphalt.webp-c8f32beabc5a4ef0258a9564327ddae4.ctex"
+path.bptc="res://.godot/imported/asphalt.webp-c8f32beabc5a4ef0258a9564327ddae4.bptc.ctex"
+path.astc="res://.godot/imported/asphalt.webp-c8f32beabc5a4ef0258a9564327ddae4.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/textures/dream/asphalt.webp"
-dest_files=["res://.godot/imported/asphalt.webp-c8f32beabc5a4ef0258a9564327ddae4.ctex"]
+dest_files=["res://.godot/imported/asphalt.webp-c8f32beabc5a4ef0258a9564327ddae4.bptc.ctex", "res://.godot/imported/asphalt.webp-c8f32beabc5a4ef0258a9564327ddae4.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

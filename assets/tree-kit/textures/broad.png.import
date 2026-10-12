@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0mje440t5is"
-path="res://.godot/imported/broad.png-14901f0f3f3214ae454df139349591b9.ctex"
+path.bptc="res://.godot/imported/broad.png-14901f0f3f3214ae454df139349591b9.bptc.ctex"
+path.astc="res://.godot/imported/broad.png-14901f0f3f3214ae454df139349591b9.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tree-kit/textures/broad.png"
-dest_files=["res://.godot/imported/broad.png-14901f0f3f3214ae454df139349591b9.ctex"]
+dest_files=["res://.godot/imported/broad.png-14901f0f3f3214ae454df139349591b9.bptc.ctex", "res://.godot/imported/broad.png-14901f0f3f3214ae454df139349591b9.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

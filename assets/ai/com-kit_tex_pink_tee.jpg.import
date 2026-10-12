@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctowbkpwj6rdn"
-path="res://.godot/imported/com-kit_tex_pink_tee.jpg-2378e4f75fb321b3ac97f548fa0a907f.ctex"
+path.bptc="res://.godot/imported/com-kit_tex_pink_tee.jpg-2378e4f75fb321b3ac97f548fa0a907f.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_tex_pink_tee.jpg-2378e4f75fb321b3ac97f548fa0a907f.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "2142385dab3b527da01d0e23fe489a0d"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_pink_tee.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_pink_tee.jpg-2378e4f75fb321b3ac97f548fa0a907f.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_pink_tee.jpg-2378e4f75fb321b3ac97f548fa0a907f.bptc.ctex", "res://.godot/imported/com-kit_tex_pink_tee.jpg-2378e4f75fb321b3ac97f548fa0a907f.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ni8qo183wh4f"
-path="res://.godot/imported/catrat_Image_0.jpg-bb9c9cd783545fe96b01b53a059792c4.ctex"
+path.bptc="res://.godot/imported/catrat_Image_0.jpg-bb9c9cd783545fe96b01b53a059792c4.bptc.ctex"
+path.astc="res://.godot/imported/catrat_Image_0.jpg-bb9c9cd783545fe96b01b53a059792c4.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "b8fa60525dc586f6404ebafbb4baec5c"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/catrat_Image_0.jpg"
-dest_files=["res://.godot/imported/catrat_Image_0.jpg-bb9c9cd783545fe96b01b53a059792c4.ctex"]
+dest_files=["res://.godot/imported/catrat_Image_0.jpg-bb9c9cd783545fe96b01b53a059792c4.bptc.ctex", "res://.godot/imported/catrat_Image_0.jpg-bb9c9cd783545fe96b01b53a059792c4.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

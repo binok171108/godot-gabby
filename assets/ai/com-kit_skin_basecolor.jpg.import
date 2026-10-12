@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r1bmk8fnpiii"
-path="res://.godot/imported/com-kit_skin_basecolor.jpg-b6310c3fec2dcc837cde8c1f6aff7b21.ctex"
+path.bptc="res://.godot/imported/com-kit_skin_basecolor.jpg-b6310c3fec2dcc837cde8c1f6aff7b21.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_skin_basecolor.jpg-b6310c3fec2dcc837cde8c1f6aff7b21.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "81b438b5737d4633555a82e52972d1aa"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_skin_basecolor.jpg"
-dest_files=["res://.godot/imported/com-kit_skin_basecolor.jpg-b6310c3fec2dcc837cde8c1f6aff7b21.ctex"]
+dest_files=["res://.godot/imported/com-kit_skin_basecolor.jpg-b6310c3fec2dcc837cde8c1f6aff7b21.bptc.ctex", "res://.godot/imported/com-kit_skin_basecolor.jpg-b6310c3fec2dcc837cde8c1f6aff7b21.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

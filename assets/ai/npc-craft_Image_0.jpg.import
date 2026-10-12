@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cve36wr6nucqd"
-path="res://.godot/imported/npc-craft_Image_0.jpg-4f0370476ef11c16e260eeb04229db2f.ctex"
+path.bptc="res://.godot/imported/npc-craft_Image_0.jpg-4f0370476ef11c16e260eeb04229db2f.bptc.ctex"
+path.astc="res://.godot/imported/npc-craft_Image_0.jpg-4f0370476ef11c16e260eeb04229db2f.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "72864d3f73eb5e4e39fbb63213cb76e1"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/npc-craft_Image_0.jpg"
-dest_files=["res://.godot/imported/npc-craft_Image_0.jpg-4f0370476ef11c16e260eeb04229db2f.ctex"]
+dest_files=["res://.godot/imported/npc-craft_Image_0.jpg-4f0370476ef11c16e260eeb04229db2f.bptc.ctex", "res://.godot/imported/npc-craft_Image_0.jpg-4f0370476ef11c16e260eeb04229db2f.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

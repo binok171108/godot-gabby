@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0vyw8tynwpem"
-path="res://.godot/imported/paving.webp-fa71da6405dea3a4e22d6b0e89b5defc.ctex"
+path.bptc="res://.godot/imported/paving.webp-fa71da6405dea3a4e22d6b0e89b5defc.bptc.ctex"
+path.astc="res://.godot/imported/paving.webp-fa71da6405dea3a4e22d6b0e89b5defc.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/textures/dream/paving.webp"
-dest_files=["res://.godot/imported/paving.webp-fa71da6405dea3a4e22d6b0e89b5defc.ctex"]
+dest_files=["res://.godot/imported/paving.webp-fa71da6405dea3a4e22d6b0e89b5defc.bptc.ctex", "res://.godot/imported/paving.webp-fa71da6405dea3a4e22d6b0e89b5defc.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wf1ke4x5w8r2"
-path="res://.godot/imported/decor-race_Image_0.png-a63a44f79e2267ff5cb69bb5eb0bc4f6.ctex"
+path.bptc="res://.godot/imported/decor-race_Image_0.png-a63a44f79e2267ff5cb69bb5eb0bc4f6.bptc.ctex"
+path.astc="res://.godot/imported/decor-race_Image_0.png-a63a44f79e2267ff5cb69bb5eb0bc4f6.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "5096aac97654714c8c3b58667e28b85c"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/decor-race_Image_0.png"
-dest_files=["res://.godot/imported/decor-race_Image_0.png-a63a44f79e2267ff5cb69bb5eb0bc4f6.ctex"]
+dest_files=["res://.godot/imported/decor-race_Image_0.png-a63a44f79e2267ff5cb69bb5eb0bc4f6.bptc.ctex", "res://.godot/imported/decor-race_Image_0.png-a63a44f79e2267ff5cb69bb5eb0bc4f6.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

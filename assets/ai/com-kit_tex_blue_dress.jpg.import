@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brcanhm27buv1"
-path="res://.godot/imported/com-kit_tex_blue_dress.jpg-fcf9597a5518c78312215675c9496e8e.ctex"
+path.bptc="res://.godot/imported/com-kit_tex_blue_dress.jpg-fcf9597a5518c78312215675c9496e8e.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_tex_blue_dress.jpg-fcf9597a5518c78312215675c9496e8e.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "e9dab4ab1471f351f616015585eb5225"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_blue_dress.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_blue_dress.jpg-fcf9597a5518c78312215675c9496e8e.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_blue_dress.jpg-fcf9597a5518c78312215675c9496e8e.bptc.ctex", "res://.godot/imported/com-kit_tex_blue_dress.jpg-fcf9597a5518c78312215675c9496e8e.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

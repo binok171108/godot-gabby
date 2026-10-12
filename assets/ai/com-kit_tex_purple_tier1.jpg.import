@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx8v7n64omgco"
-path="res://.godot/imported/com-kit_tex_purple_tier1.jpg-738cd486374a552eaced3e79b10eeb9f.ctex"
+path.bptc="res://.godot/imported/com-kit_tex_purple_tier1.jpg-738cd486374a552eaced3e79b10eeb9f.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_tex_purple_tier1.jpg-738cd486374a552eaced3e79b10eeb9f.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "6c6451f46721ed3d8f11d9e3931cc661"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_purple_tier1.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_purple_tier1.jpg-738cd486374a552eaced3e79b10eeb9f.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_purple_tier1.jpg-738cd486374a552eaced3e79b10eeb9f.bptc.ctex", "res://.godot/imported/com-kit_tex_purple_tier1.jpg-738cd486374a552eaced3e79b10eeb9f.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

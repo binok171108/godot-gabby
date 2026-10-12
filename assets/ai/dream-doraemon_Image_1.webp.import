@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2lfqbtwrvyyc"
-path="res://.godot/imported/dream-doraemon_Image_1.webp-9c34ad4f56fa5e42a0359f62027a4ed7.ctex"
+path.bptc="res://.godot/imported/dream-doraemon_Image_1.webp-9c34ad4f56fa5e42a0359f62027a4ed7.bptc.ctex"
+path.astc="res://.godot/imported/dream-doraemon_Image_1.webp-9c34ad4f56fa5e42a0359f62027a4ed7.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "7ec7e8a885b7e1d2d5058a3f851163ca"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/dream-doraemon_Image_1.webp"
-dest_files=["res://.godot/imported/dream-doraemon_Image_1.webp-9c34ad4f56fa5e42a0359f62027a4ed7.ctex"]
+dest_files=["res://.godot/imported/dream-doraemon_Image_1.webp-9c34ad4f56fa5e42a0359f62027a4ed7.bptc.ctex", "res://.godot/imported/dream-doraemon_Image_1.webp-9c34ad4f56fa5e42a0359f62027a4ed7.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

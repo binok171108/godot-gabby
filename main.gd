@@ -150,8 +150,6 @@ func _ready() -> void:
 	games = Games.new()
 	games.host = self
 	add_child(games)
-	if not OS.has_feature("web"):
-		enter_room("world")
 	show_profiles()
 	get_window().focus_exited.connect(func(): keyboard.clear(); controls.release(); look_finger = -1; mouse_looking = false; camera_touches.clear())
 	get_viewport().size_changed.connect(func(): look_finger = -1; mouse_looking = false; controls.release(); camera_touches.clear())

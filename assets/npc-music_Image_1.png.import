@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2f0khd6vdvwd"
-path="res://.godot/imported/npc-music_Image_1.png-937c62723c2141d18e8c9b299b213baa.ctex"
+path.bptc="res://.godot/imported/npc-music_Image_1.png-937c62723c2141d18e8c9b299b213baa.bptc.ctex"
+path.astc="res://.godot/imported/npc-music_Image_1.png-937c62723c2141d18e8c9b299b213baa.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "bb4071bb433c06f615c36c2537666d46"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/npc-music_Image_1.png"
-dest_files=["res://.godot/imported/npc-music_Image_1.png-937c62723c2141d18e8c9b299b213baa.ctex"]
+dest_files=["res://.godot/imported/npc-music_Image_1.png-937c62723c2141d18e8c9b299b213baa.bptc.ctex", "res://.godot/imported/npc-music_Image_1.png-937c62723c2141d18e8c9b299b213baa.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

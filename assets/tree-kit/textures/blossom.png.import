@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3uj1qupl5lna"
-path="res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.ctex"
+path.bptc="res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.bptc.ctex"
+path.astc="res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/tree-kit/textures/blossom.png"
-dest_files=["res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.ctex"]
+dest_files=["res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.bptc.ctex", "res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

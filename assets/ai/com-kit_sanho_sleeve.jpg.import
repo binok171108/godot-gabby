@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7c6ms1e5s1e8"
-path="res://.godot/imported/com-kit_sanho_sleeve.jpg-91c0d946938214f06832da74b0b245c0.ctex"
+path.bptc="res://.godot/imported/com-kit_sanho_sleeve.jpg-91c0d946938214f06832da74b0b245c0.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_sanho_sleeve.jpg-91c0d946938214f06832da74b0b245c0.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "1c97a1d2d779de03b00653a0f85773c5"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_sanho_sleeve.jpg"
-dest_files=["res://.godot/imported/com-kit_sanho_sleeve.jpg-91c0d946938214f06832da74b0b245c0.ctex"]
+dest_files=["res://.godot/imported/com-kit_sanho_sleeve.jpg-91c0d946938214f06832da74b0b245c0.bptc.ctex", "res://.godot/imported/com-kit_sanho_sleeve.jpg-91c0d946938214f06832da74b0b245c0.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

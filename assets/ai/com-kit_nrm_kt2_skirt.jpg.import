@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c55msk0a3qlfp"
-path="res://.godot/imported/com-kit_nrm_kt2_skirt.jpg-9360130a9542f173a203618b8d435dc5.ctex"
+path.bptc="res://.godot/imported/com-kit_nrm_kt2_skirt.jpg-9360130a9542f173a203618b8d435dc5.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_nrm_kt2_skirt.jpg-9360130a9542f173a203618b8d435dc5.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "94b16c1705cae62be013cf2f9d28c215"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_nrm_kt2_skirt.jpg"
-dest_files=["res://.godot/imported/com-kit_nrm_kt2_skirt.jpg-9360130a9542f173a203618b8d435dc5.ctex"]
+dest_files=["res://.godot/imported/com-kit_nrm_kt2_skirt.jpg-9360130a9542f173a203618b8d435dc5.bptc.ctex", "res://.godot/imported/com-kit_nrm_kt2_skirt.jpg-9360130a9542f173a203618b8d435dc5.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

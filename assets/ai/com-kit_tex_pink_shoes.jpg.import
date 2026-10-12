@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtrf1abowquex"
-path="res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.ctex"
+path.bptc="res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "b87415cb10119f3521a3069e7310800c"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_pink_shoes.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.bptc.ctex", "res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

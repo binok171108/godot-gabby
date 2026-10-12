@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bshv1y3q5yonp"
-path="res://.godot/imported/roof-tiles.webp-9c72056f5c54ec959f52c867a77dd262.ctex"
+path.bptc="res://.godot/imported/roof-tiles.webp-9c72056f5c54ec959f52c867a77dd262.bptc.ctex"
+path.astc="res://.godot/imported/roof-tiles.webp-9c72056f5c54ec959f52c867a77dd262.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/textures/dream/roof-tiles.webp"
-dest_files=["res://.godot/imported/roof-tiles.webp-9c72056f5c54ec959f52c867a77dd262.ctex"]
+dest_files=["res://.godot/imported/roof-tiles.webp-9c72056f5c54ec959f52c867a77dd262.bptc.ctex", "res://.godot/imported/roof-tiles.webp-9c72056f5c54ec959f52c867a77dd262.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

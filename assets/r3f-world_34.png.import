@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2hdyqhbmtiox"
-path="res://.godot/imported/r3f-world_34.png-948ccafc11db6c1c3afe0e3f6e4c140e.ctex"
+path.bptc="res://.godot/imported/r3f-world_34.png-948ccafc11db6c1c3afe0e3f6e4c140e.bptc.ctex"
+path.astc="res://.godot/imported/r3f-world_34.png-948ccafc11db6c1c3afe0e3f6e4c140e.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "c00006f28a1f451e5d951d5aae2a3cf8"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/r3f-world_34.png"
-dest_files=["res://.godot/imported/r3f-world_34.png-948ccafc11db6c1c3afe0e3f6e4c140e.ctex"]
+dest_files=["res://.godot/imported/r3f-world_34.png-948ccafc11db6c1c3afe0e3f6e4c140e.bptc.ctex", "res://.godot/imported/r3f-world_34.png-948ccafc11db6c1c3afe0e3f6e4c140e.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

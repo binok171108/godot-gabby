@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fropaqaddrbp"
-path="res://.godot/imported/com-kit_tex_home_shorts.jpg-924f9b70ca3b5d617ca8d9fd8c4dc1dd.ctex"
+path.bptc="res://.godot/imported/com-kit_tex_home_shorts.jpg-924f9b70ca3b5d617ca8d9fd8c4dc1dd.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_tex_home_shorts.jpg-924f9b70ca3b5d617ca8d9fd8c4dc1dd.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "5397d0fb4592fb56363ff70724c4a982"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_home_shorts.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_home_shorts.jpg-924f9b70ca3b5d617ca8d9fd8c4dc1dd.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_home_shorts.jpg-924f9b70ca3b5d617ca8d9fd8c4dc1dd.bptc.ctex", "res://.godot/imported/com-kit_tex_home_shorts.jpg-924f9b70ca3b5d617ca8d9fd8c4dc1dd.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

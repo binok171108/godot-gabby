@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wkot1erk0ets"
-path="res://.godot/imported/GrassFlowerKit_All_DirtDecal_Atlas.png-a887ee6cff9330a0e0151532a0e10823.ctex"
+path.bptc="res://.godot/imported/GrassFlowerKit_All_DirtDecal_Atlas.png-a887ee6cff9330a0e0151532a0e10823.bptc.ctex"
+path.astc="res://.godot/imported/GrassFlowerKit_All_DirtDecal_Atlas.png-a887ee6cff9330a0e0151532a0e10823.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "738a0bd42a1265e577ef30dd2c4122bd"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/grass-kit/GrassFlowerKit_All_DirtDecal_Atlas.png"
-dest_files=["res://.godot/imported/GrassFlowerKit_All_DirtDecal_Atlas.png-a887ee6cff9330a0e0151532a0e10823.ctex"]
+dest_files=["res://.godot/imported/GrassFlowerKit_All_DirtDecal_Atlas.png-a887ee6cff9330a0e0151532a0e10823.bptc.ctex", "res://.godot/imported/GrassFlowerKit_All_DirtDecal_Atlas.png-a887ee6cff9330a0e0151532a0e10823.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

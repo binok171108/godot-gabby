@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cai56hhk65ha7"
-path="res://.godot/imported/com-kit_tex_blue_ruffle.jpg-3ee58d01ce0075618ba9d5a37388d65d.ctex"
+path.bptc="res://.godot/imported/com-kit_tex_blue_ruffle.jpg-3ee58d01ce0075618ba9d5a37388d65d.bptc.ctex"
+path.astc="res://.godot/imported/com-kit_tex_blue_ruffle.jpg-3ee58d01ce0075618ba9d5a37388d65d.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "7f3754826a8dcc97351eca4fe402c1e2"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_blue_ruffle.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_blue_ruffle.jpg-3ee58d01ce0075618ba9d5a37388d65d.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_blue_ruffle.jpg-3ee58d01ce0075618ba9d5a37388d65d.bptc.ctex", "res://.godot/imported/com-kit_tex_blue_ruffle.jpg-3ee58d01ce0075618ba9d5a37388d65d.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

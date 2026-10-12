@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddh8al05lxq1o"
-path="res://.godot/imported/grass.webp-87ede51f42011fb2ecec48efe7f4aa51.ctex"
+path.bptc="res://.godot/imported/grass.webp-87ede51f42011fb2ecec48efe7f4aa51.bptc.ctex"
+path.astc="res://.godot/imported/grass.webp-87ede51f42011fb2ecec48efe7f4aa51.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/textures/dream/grass.webp"
-dest_files=["res://.godot/imported/grass.webp-87ede51f42011fb2ecec48efe7f4aa51.ctex"]
+dest_files=["res://.godot/imported/grass.webp-87ede51f42011fb2ecec48efe7f4aa51.bptc.ctex", "res://.godot/imported/grass.webp-87ede51f42011fb2ecec48efe7f4aa51.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

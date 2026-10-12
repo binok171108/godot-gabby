@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bif1vg66omb7r"
-path="res://.godot/imported/kit_Image_4.webp-4c3524ae7f2859881f593c803a489a1c.ctex"
+path.bptc="res://.godot/imported/kit_Image_4.webp-4c3524ae7f2859881f593c803a489a1c.bptc.ctex"
+path.astc="res://.godot/imported/kit_Image_4.webp-4c3524ae7f2859881f593c803a489a1c.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "baf749ded12b64c481264a2ab22f6a97"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/dream/grass/kit_Image_4.webp"
-dest_files=["res://.godot/imported/kit_Image_4.webp-4c3524ae7f2859881f593c803a489a1c.ctex"]
+dest_files=["res://.godot/imported/kit_Image_4.webp-4c3524ae7f2859881f593c803a489a1c.bptc.ctex", "res://.godot/imported/kit_Image_4.webp-4c3524ae7f2859881f593c803a489a1c.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4

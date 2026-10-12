@@ -3,9 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cawelh88ljvn2"
-path="res://.godot/imported/dream-suneo_tripo_image_08f8919c_3-tripo_image_08f8919c_4.png-34aeee4b90f414da15c8136f012a852c.ctex"
+path.bptc="res://.godot/imported/dream-suneo_tripo_image_08f8919c_3-tripo_image_08f8919c_4.png-34aeee4b90f414da15c8136f012a852c.bptc.ctex"
+path.astc="res://.godot/imported/dream-suneo_tripo_image_08f8919c_3-tripo_image_08f8919c_4.png-34aeee4b90f414da15c8136f012a852c.astc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "e88f5138b97ccf9c6e2b42c15ac1fc21"
@@ -14,11 +16,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ai/dream-suneo_tripo_image_08f8919c_3-tripo_image_08f8919c_4.png"
-dest_files=["res://.godot/imported/dream-suneo_tripo_image_08f8919c_3-tripo_image_08f8919c_4.png-34aeee4b90f414da15c8136f012a852c.ctex"]
+dest_files=["res://.godot/imported/dream-suneo_tripo_image_08f8919c_3-tripo_image_08f8919c_4.png-34aeee4b90f414da15c8136f012a852c.bptc.ctex", "res://.godot/imported/dream-suneo_tripo_image_08f8919c_3-tripo_image_08f8919c_4.png-34aeee4b90f414da15c8136f012a852c.astc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=true
 compress/lossy_quality=0.7
 compress/uastc_level=4
