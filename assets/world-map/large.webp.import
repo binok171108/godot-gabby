@@ -2,23 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmvim7ys2q758"
-path.bptc="res://.godot/imported/large.png-8947486f23ab7d5a904c784a72fcc742.bptc.ctex"
-path.astc="res://.godot/imported/large.png-8947486f23ab7d5a904c784a72fcc742.astc.ctex"
+uid="uid://c21033ljcl26w"
+path="res://.godot/imported/large.webp-b54b0877f95c50d86c6364b1dad865d4.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/world-map/large.png"
-dest_files=["res://.godot/imported/large.png-8947486f23ab7d5a904c784a72fcc742.bptc.ctex", "res://.godot/imported/large.png-8947486f23ab7d5a904c784a72fcc742.astc.ctex"]
+source_file="res://assets/world-map/large.webp"
+dest_files=["res://.godot/imported/large.webp-b54b0877f95c50d86c6364b1dad865d4.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=true
+compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
@@ -38,5 +36,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
-detect_3d/compress_to=1
+process/size_limit=1024
+detect_3d/compress_to=0

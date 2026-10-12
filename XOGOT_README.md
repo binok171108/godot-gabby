@@ -3,7 +3,7 @@
 ## Cài trên iPhone/iPad
 
 1. Cập nhật Xogot lên 1.7.2 hoặc mới hơn (Godot 4.7).
-2. Đăng nhập GitHub bằng tài khoản có quyền repo riêng tư, tải `GabbyHouse-Xogot-iOS.zip` từ Release.
+2. Tải ZIP nhánh main mới nhất từ https://github.com/binok171108/godot-gabby (Code → Download ZIP). Không dùng ZIP Release cũ chứa bridge parse lỗi. Nếu muốn Pull trên iOS, dùng Working Copy và liên kết thư mục với Xogot.
 3. Trong ứng dụng Files, chạm ZIP để giải nén. Giữ nguyên toàn bộ thư mục `GabbyHouse-Xogot`.
 4. Trong Project Manager của Xogot, import thư mục chứa `project.godot`.
 5. Chờ import model/texture lần đầu, sau đó bấm chạy project (`main.tscn`).
@@ -25,4 +25,10 @@
 - Bản port hiện tại chưa đủ toàn bộ gameplay R3F; các lỗi streaming/LOD hiện có không tự hết khi chuyển native.
 - Chức năng tự đi theo mục tiêu bản đồ đang phụ thuộc Node.js + lõi Rust WASM trên desktop. iOS không chạy được Node.js: gói này báo chưa hỗ trợ, không thay bằng thuật toán khác. Bản đồ và điều khiển joystick vẫn được giữ.
 - Import tài nguyên lần đầu có thể lâu và cần dung lượng trống; không phải mỗi lần chơi tải lại qua Safari.
-- Đây là gói thử cá nhân trong repo riêng tư; không phân phối lại asset AI/cá nhân hoặc coi là ứng dụng đã phát hành App Store.
+- Repo snapshot công khai được chủ project cho phép; không tự coi là quyền phân phối lại asset hoặc ứng dụng đã phát hành App Store.
+
+## Texture mobile ngày 2026-10-13
+
+- 3D giới hạn 512px, gồm ảnh ngoài và ảnh nhúng GLB; map UI tối đa 1024px. Giữ nguyên mesh/UV/animation/reference.
+- VRAM Compressed cho 3D, High Quality tắt để tránh ASTC/BPTC encoder nặng; giữ mipmap 3D. UI lossless/no mipmap. Giảm độ phân giải nguồn trước import mới giảm peak decode; WebP chỉ giảm dung lượng file nếu giữ cùng số pixel.
+- Cold import Windows không ERROR; profile allocator ~52.6 MiB/world ~169.3 MiB, cold cache ~114 MiB. Chưa đo trên iPhone; cần import ZIP mới và kiểm thực tế low memory.

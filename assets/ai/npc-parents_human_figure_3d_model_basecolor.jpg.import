@@ -3,25 +3,25 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://50klgc42wmdg"
-path.bptc="res://.godot/imported/npc-parents_human_figure_3d_model_basecolor.jpg-a0d4e982db26049d3fb9f66873af1e83.bptc.ctex"
-path.astc="res://.godot/imported/npc-parents_human_figure_3d_model_basecolor.jpg-a0d4e982db26049d3fb9f66873af1e83.astc.ctex"
+path.s3tc="res://.godot/imported/npc-parents_human_figure_3d_model_basecolor.jpg-a0d4e982db26049d3fb9f66873af1e83.s3tc.ctex"
+path.etc2="res://.godot/imported/npc-parents_human_figure_3d_model_basecolor.jpg-a0d4e982db26049d3fb9f66873af1e83.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "c7c7af048fa4dcaa81f44c44b9801d06"
+"md5": "edc6abf80f6279734f88ba7ef491947e"
 }
 
 [deps]
 
 source_file="res://assets/ai/npc-parents_human_figure_3d_model_basecolor.jpg"
-dest_files=["res://.godot/imported/npc-parents_human_figure_3d_model_basecolor.jpg-a0d4e982db26049d3fb9f66873af1e83.bptc.ctex", "res://.godot/imported/npc-parents_human_figure_3d_model_basecolor.jpg-a0d4e982db26049d3fb9f66873af1e83.astc.ctex"]
+dest_files=["res://.godot/imported/npc-parents_human_figure_3d_model_basecolor.jpg-a0d4e982db26049d3fb9f66873af1e83.s3tc.ctex", "res://.godot/imported/npc-parents_human_figure_3d_model_basecolor.jpg-a0d4e982db26049d3fb9f66873af1e83.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

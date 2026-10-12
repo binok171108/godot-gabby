@@ -3,25 +3,25 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chxkudq3dd3ya"
-path.bptc="res://.godot/imported/com-kit_tex_purple_cami.jpg-67a0ab0154000e44fb2b81c01b6fca3e.bptc.ctex"
-path.astc="res://.godot/imported/com-kit_tex_purple_cami.jpg-67a0ab0154000e44fb2b81c01b6fca3e.astc.ctex"
+path.s3tc="res://.godot/imported/com-kit_tex_purple_cami.jpg-67a0ab0154000e44fb2b81c01b6fca3e.s3tc.ctex"
+path.etc2="res://.godot/imported/com-kit_tex_purple_cami.jpg-67a0ab0154000e44fb2b81c01b6fca3e.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "2b5afd1a7861df70b434dc0ca81dd3fd"
+"md5": "5dc6cdf75104d6275bb6807cfc79c857"
 }
 
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_purple_cami.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_purple_cami.jpg-67a0ab0154000e44fb2b81c01b6fca3e.bptc.ctex", "res://.godot/imported/com-kit_tex_purple_cami.jpg-67a0ab0154000e44fb2b81c01b6fca3e.astc.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_purple_cami.jpg-67a0ab0154000e44fb2b81c01b6fca3e.s3tc.ctex", "res://.godot/imported/com-kit_tex_purple_cami.jpg-67a0ab0154000e44fb2b81c01b6fca3e.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

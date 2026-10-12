@@ -12,7 +12,7 @@ func initialize(game: Node, large: bool = false) -> void:
 	host = game
 	detailed = large
 	data = JSON.parse_string(FileAccess.get_file_as_string("res://data/world-map.json"))
-	texture = load("res://assets/world-map/" + ("large" if large else "atlas") + ".png")
+	texture = load("res://assets/world-map/" + ("large" if large else "atlas") + ".webp")
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	if large:
 		custom_minimum_size = Vector2(320,320 / data.aspect)

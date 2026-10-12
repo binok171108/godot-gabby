@@ -2,23 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byre8poq3a0o6"
-path.bptc="res://.godot/imported/atlas.png-93cbbb722c4758421a7590140a9dab86.bptc.ctex"
-path.astc="res://.godot/imported/atlas.png-93cbbb722c4758421a7590140a9dab86.astc.ctex"
+uid="uid://c5nrrgqhjf6bb"
+path="res://.godot/imported/atlas.webp-7ec85a775d20aff52e739280ecdb5bb9.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/world-map/atlas.png"
-dest_files=["res://.godot/imported/atlas.png-93cbbb722c4758421a7590140a9dab86.bptc.ctex", "res://.godot/imported/atlas.png-93cbbb722c4758421a7590140a9dab86.astc.ctex"]
+source_file="res://assets/world-map/atlas.webp"
+dest_files=["res://.godot/imported/atlas.webp-7ec85a775d20aff52e739280ecdb5bb9.ctex"]
 
 [params]
 
-compress/mode=2
-compress/high_quality=true
+compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
@@ -38,5 +36,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
-detect_3d/compress_to=1
+process/size_limit=1024
+detect_3d/compress_to=0

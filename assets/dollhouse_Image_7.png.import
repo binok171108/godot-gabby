@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t20vq1tk6fwl"
-path.bptc="res://.godot/imported/dollhouse_Image_7.png-4cb494fdd6bb9916f755b228d8524ceb.bptc.ctex"
-path.astc="res://.godot/imported/dollhouse_Image_7.png-4cb494fdd6bb9916f755b228d8524ceb.astc.ctex"
+path.s3tc="res://.godot/imported/dollhouse_Image_7.png-4cb494fdd6bb9916f755b228d8524ceb.s3tc.ctex"
+path.etc2="res://.godot/imported/dollhouse_Image_7.png-4cb494fdd6bb9916f755b228d8524ceb.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -16,12 +16,12 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/dollhouse_Image_7.png"
-dest_files=["res://.godot/imported/dollhouse_Image_7.png-4cb494fdd6bb9916f755b228d8524ceb.bptc.ctex", "res://.godot/imported/dollhouse_Image_7.png-4cb494fdd6bb9916f755b228d8524ceb.astc.ctex"]
+dest_files=["res://.godot/imported/dollhouse_Image_7.png-4cb494fdd6bb9916f755b228d8524ceb.s3tc.ctex", "res://.godot/imported/dollhouse_Image_7.png-4cb494fdd6bb9916f755b228d8524ceb.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

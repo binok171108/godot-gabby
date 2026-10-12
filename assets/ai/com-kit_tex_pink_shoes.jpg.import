@@ -3,25 +3,25 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtrf1abowquex"
-path.bptc="res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.bptc.ctex"
-path.astc="res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.astc.ctex"
+path.s3tc="res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.s3tc.ctex"
+path.etc2="res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "b87415cb10119f3521a3069e7310800c"
+"md5": "4a5e1ef8ce6618a69ab9b9860103a82d"
 }
 
 [deps]
 
 source_file="res://assets/ai/com-kit_tex_pink_shoes.jpg"
-dest_files=["res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.bptc.ctex", "res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.astc.ctex"]
+dest_files=["res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.s3tc.ctex", "res://.godot/imported/com-kit_tex_pink_shoes.jpg-161927d7afcbbcb14cf2e11ed20f253a.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

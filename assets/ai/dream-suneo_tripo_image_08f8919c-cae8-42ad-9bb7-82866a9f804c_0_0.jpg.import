@@ -3,25 +3,25 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwesgyr4xs8it"
-path.bptc="res://.godot/imported/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg-7ce625290e0f4104f4a45bfe7017b822.bptc.ctex"
-path.astc="res://.godot/imported/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg-7ce625290e0f4104f4a45bfe7017b822.astc.ctex"
+path.s3tc="res://.godot/imported/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg-7ce625290e0f4104f4a45bfe7017b822.s3tc.ctex"
+path.etc2="res://.godot/imported/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg-7ce625290e0f4104f4a45bfe7017b822.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "3bbee8ffc8809a1b2d26fe10dc2b2b05"
+"md5": "f2e5ab90d549060de07cf9a8cb8e3e96"
 }
 
 [deps]
 
 source_file="res://assets/ai/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg"
-dest_files=["res://.godot/imported/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg-7ce625290e0f4104f4a45bfe7017b822.bptc.ctex", "res://.godot/imported/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg-7ce625290e0f4104f4a45bfe7017b822.astc.ctex"]
+dest_files=["res://.godot/imported/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg-7ce625290e0f4104f4a45bfe7017b822.s3tc.ctex", "res://.godot/imported/dream-suneo_tripo_image_08f8919c-cae8-42ad-9bb7-82866a9f804c_0_0.jpg-7ce625290e0f4104f4a45bfe7017b822.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

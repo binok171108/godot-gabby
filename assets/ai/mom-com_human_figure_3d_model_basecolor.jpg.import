@@ -3,25 +3,25 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3d83tnbmd4f8"
-path.bptc="res://.godot/imported/mom-com_human_figure_3d_model_basecolor.jpg-4b993edc18e012803d9bf651a26c937b.bptc.ctex"
-path.astc="res://.godot/imported/mom-com_human_figure_3d_model_basecolor.jpg-4b993edc18e012803d9bf651a26c937b.astc.ctex"
+path.s3tc="res://.godot/imported/mom-com_human_figure_3d_model_basecolor.jpg-4b993edc18e012803d9bf651a26c937b.s3tc.ctex"
+path.etc2="res://.godot/imported/mom-com_human_figure_3d_model_basecolor.jpg-4b993edc18e012803d9bf651a26c937b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "fc8447309b91b2abc03e8c648058000c"
+"md5": "01d711d4a70ba42bac609f8e9fd96547"
 }
 
 [deps]
 
 source_file="res://assets/ai/mom-com_human_figure_3d_model_basecolor.jpg"
-dest_files=["res://.godot/imported/mom-com_human_figure_3d_model_basecolor.jpg-4b993edc18e012803d9bf651a26c937b.bptc.ctex", "res://.godot/imported/mom-com_human_figure_3d_model_basecolor.jpg-4b993edc18e012803d9bf651a26c937b.astc.ctex"]
+dest_files=["res://.godot/imported/mom-com_human_figure_3d_model_basecolor.jpg-4b993edc18e012803d9bf651a26c937b.s3tc.ctex", "res://.godot/imported/mom-com_human_figure_3d_model_basecolor.jpg-4b993edc18e012803d9bf651a26c937b.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

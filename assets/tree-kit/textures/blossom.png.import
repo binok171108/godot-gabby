@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3uj1qupl5lna"
-path.bptc="res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.bptc.ctex"
-path.astc="res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.astc.ctex"
+path.s3tc="res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.s3tc.ctex"
+path.etc2="res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -13,12 +13,12 @@ metadata={
 [deps]
 
 source_file="res://assets/tree-kit/textures/blossom.png"
-dest_files=["res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.bptc.ctex", "res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.astc.ctex"]
+dest_files=["res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.s3tc.ctex", "res://.godot/imported/blossom.png-a0a65e6d520f0917f1093b6bf989adeb.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -38,5 +38,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

@@ -3,25 +3,25 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuiak8ytrxya7"
-path.bptc="res://.godot/imported/npc-garden_Image_0.jpg-bb55d1d645edd01a4ac613f15c460a11.bptc.ctex"
-path.astc="res://.godot/imported/npc-garden_Image_0.jpg-bb55d1d645edd01a4ac613f15c460a11.astc.ctex"
+path.s3tc="res://.godot/imported/npc-garden_Image_0.jpg-bb55d1d645edd01a4ac613f15c460a11.s3tc.ctex"
+path.etc2="res://.godot/imported/npc-garden_Image_0.jpg-bb55d1d645edd01a4ac613f15c460a11.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "1941d11269bde7d1e43b6acc93c1f22a"
+"md5": "99c4628710712bb23bb8afd337c4a3bb"
 }
 
 [deps]
 
 source_file="res://assets/ai/npc-garden_Image_0.jpg"
-dest_files=["res://.godot/imported/npc-garden_Image_0.jpg-bb55d1d645edd01a4ac613f15c460a11.bptc.ctex", "res://.godot/imported/npc-garden_Image_0.jpg-bb55d1d645edd01a4ac613f15c460a11.astc.ctex"]
+dest_files=["res://.godot/imported/npc-garden_Image_0.jpg-bb55d1d645edd01a4ac613f15c460a11.s3tc.ctex", "res://.godot/imported/npc-garden_Image_0.jpg-bb55d1d645edd01a4ac613f15c460a11.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

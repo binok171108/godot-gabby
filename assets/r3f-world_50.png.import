@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3temva2mtqeo"
-path.bptc="res://.godot/imported/r3f-world_50.png-4f45a42d37c264a8f14cd22c18c849bd.bptc.ctex"
-path.astc="res://.godot/imported/r3f-world_50.png-4f45a42d37c264a8f14cd22c18c849bd.astc.ctex"
+path.s3tc="res://.godot/imported/r3f-world_50.png-4f45a42d37c264a8f14cd22c18c849bd.s3tc.ctex"
+path.etc2="res://.godot/imported/r3f-world_50.png-4f45a42d37c264a8f14cd22c18c849bd.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -16,12 +16,12 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/r3f-world_50.png"
-dest_files=["res://.godot/imported/r3f-world_50.png-4f45a42d37c264a8f14cd22c18c849bd.bptc.ctex", "res://.godot/imported/r3f-world_50.png-4f45a42d37c264a8f14cd22c18c849bd.astc.ctex"]
+dest_files=["res://.godot/imported/r3f-world_50.png-4f45a42d37c264a8f14cd22c18c849bd.s3tc.ctex", "res://.godot/imported/r3f-world_50.png-4f45a42d37c264a8f14cd22c18c849bd.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1

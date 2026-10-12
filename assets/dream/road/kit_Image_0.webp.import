@@ -3,25 +3,25 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g3s52is53abr"
-path.bptc="res://.godot/imported/kit_Image_0.webp-05c4a1380bd660e615c13829ecb70d67.bptc.ctex"
-path.astc="res://.godot/imported/kit_Image_0.webp-05c4a1380bd660e615c13829ecb70d67.astc.ctex"
+path.s3tc="res://.godot/imported/kit_Image_0.webp-05c4a1380bd660e615c13829ecb70d67.s3tc.ctex"
+path.etc2="res://.godot/imported/kit_Image_0.webp-05c4a1380bd660e615c13829ecb70d67.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "97bd620dec8b47af520878f9b4d6c423"
+"md5": "cb7e78d236119817c8364a38142b5fc2"
 }
 
 [deps]
 
 source_file="res://assets/dream/road/kit_Image_0.webp"
-dest_files=["res://.godot/imported/kit_Image_0.webp-05c4a1380bd660e615c13829ecb70d67.bptc.ctex", "res://.godot/imported/kit_Image_0.webp-05c4a1380bd660e615c13829ecb70d67.astc.ctex"]
+dest_files=["res://.godot/imported/kit_Image_0.webp-05c4a1380bd660e615c13829ecb70d67.s3tc.ctex", "res://.godot/imported/kit_Image_0.webp-05c4a1380bd660e615c13829ecb70d67.etc2.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=true
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=4
 compress/rdo_quality_loss=0.0
@@ -41,5 +41,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=512
 detect_3d/compress_to=1
