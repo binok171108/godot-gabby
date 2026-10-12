@@ -21,6 +21,7 @@
 ## Giới hạn phải biết
 
 - Chưa chạy thử trên iPhone/iPad thật. Kiểm import/runtime Windows không chứng minh hiệu năng Metal hay tương thích shader iOS.
+- Bản repo đã loại script/scene bridge stream gây lỗi parse `background_runner.gd` do không còn `StreamInput` Autoload. Pull rồi mở lại project, chờ import xong trước khi chơi; nếu Cốm chưa import được, Reimport `assets/ai/com-kit.glb` và gửi log đầu tiên. Không coi lỗi model null đã được xác minh hết trên iOS.
 - Bản port hiện tại chưa đủ toàn bộ gameplay R3F; các lỗi streaming/LOD hiện có không tự hết khi chuyển native.
 - Chức năng tự đi theo mục tiêu bản đồ đang phụ thuộc Node.js + lõi Rust WASM trên desktop. iOS không chạy được Node.js: gói này báo chưa hỗ trợ, không thay bằng thuật toán khác. Bản đồ và điều khiển joystick vẫn được giữ.
 - Import tài nguyên lần đầu có thể lâu và cần dung lượng trống; không phải mỗi lần chơi tải lại qua Safari.

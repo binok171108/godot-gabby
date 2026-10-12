@@ -14,7 +14,8 @@ Nếu dùng Download ZIP trên GitHub, giải nén trong Files rồi import thư
 ## Trạng thái kiểm thử
 
 - Snapshot được kiểm Godot 4.7.2 Windows: cold import không ERROR/SCRIPT ERROR; runtime regression đạt entity load/unload, camera, map/manual cancellation và train.
-- **Chưa kiểm trên iPhone/iPad thật. Lỗi import/crash Xogot được báo nhưng chưa có thông báo cụ thể để chẩn đoán, chưa khẳng định đã sửa.** Đổi cách tải sang Git không tự sửa lỗi engine/import.
+- **Sửa lỗi parse từ ảnh Xogot:** `background_runner.gd` vẫn gọi `StreamInput` sau khi bỏ Autoload cầu nối stream. Đã tái hiện lỗi `gdscript_resource_format.cpp:46` trên Windows rồi loại toàn bộ script/scene cầu nối stream không dùng khỏi repo này. Chưa kiểm lại trên iPhone/iPad thật.
+- Sau khi Pull bản sửa, dừng game và đóng/mở lại project, chờ import tài nguyên hoàn tất. Nếu model Cốm vẫn trả về null, chọn `assets/ai/com-kit.glb` trong FileSystem và Reimport; gửi thêm log import đầu tiên nếu thất bại. Chưa chứng minh model null trên iOS cùng nguyên nhân với lỗi parse; không dùng model thay thế.
 - iOS sử dụng Mobile renderer; VSync bật. Không có cầu nối UDP stream, cache Windows `.godot`, save/PIN người chơi hay token.
 - Tự tìm đường bản đồ còn phụ thuộc Node.js/Rust WASM trên desktop, chưa hỗ trợ iOS; map và joystick vẫn có. Không thay bằng thuật toán khác.
 - Bản port chưa đủ toàn bộ gameplay R3F; streaming/LOD còn cần hoàn thiện. Xem `XOGOT_README.md`.
